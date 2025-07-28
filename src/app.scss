@@ -1,6 +1,6 @@
 html {
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 * {
@@ -24,11 +24,20 @@ section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
-  overflow: hidden;
+  overflow: clip;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip; // ✅ prevents horizontal scrolling
+  
 }
 
 @mixin mobile {
   @media (max-width: 738px) {
+    
+    
     @content;
   }
 }

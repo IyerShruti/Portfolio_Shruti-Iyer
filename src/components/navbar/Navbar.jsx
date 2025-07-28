@@ -13,20 +13,20 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Lama Dev
+          
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a href="https://drive.google.com/file/d/1Ni2kCumFiXoB0lRZV3PJGpJ0EubvbEhw/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>
+            <button>Download Resume</button>
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a href="https://www.credly.com/badges/c6231420-2f86-47bd-9f3a-1aa2b12830dc/public_url" target="_blank" rel="noopener noreferrer" >
+            <img src="/badge.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
+          <a href="https://www.linkedin.com/in/shrutisureshiyer/" target="_blank" rel="noopener noreferrer">
+            <img src="/linkedin.png" alt=""  />
           </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a href="https://github.com/IyerShruti" target="_blank" rel="noopener noreferrer" >
+            <img src="/github.png" alt="" />
           </a>
         </div>
       </div>

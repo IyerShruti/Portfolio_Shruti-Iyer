@@ -5,28 +5,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Digital Well-being Analysis (Capstone)",
+    img: "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?_gl=1*fe90u6*_ga*MTAwNzEzODg5MS4xNzUyNDAwOTMz*_ga_8JE65Q40S6*czE3NTM2MDEyNjMkbzQkZzEkdDE3NTM2MDMwMTMkajQzJGwwJGgw",
+    desc: "Conducted an in-depth analysis of how screen time, sleep hours, Zoom meetings, and exercise influence burnout, mood, and work-life balance. Designed unique metrics and built an interactive Tableau dashboard to uncover meaningful patterns and actionable insights.",
+    projectLink: "https://github.com/IyerShruti/Digital-Wellbeing-Analysis.git",
+    blogLink: "https://medium.com/@iyershrutisuresh/from-doomscrolling-to-dashboarding-my-first-data-dive-into-burnout-93a9add36d0d"
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Netflix Trends Analysis",
+    img: "https://images.pexels.com/photos/987586/pexels-photo-987586.jpeg?_gl=1*ua918i*_ga*MTAwNzEzODg5MS4xNzUyNDAwOTMz*_ga_8JE65Q40S6*czE3NTM1OTQyNDIkbzIkZzEkdDE3NTM1OTQ0MzEkajE1JGwwJGgw",
+    desc: "Analyzed global Netflix data to reveal viewing trends across genres, countries, and release years. Built interactive Tableau dashboards to showcase content popularity and seasonal patterns.",
+    projectLink: "https://github.com/IyerShruti/Netflix-Content-Trend-Analysis.git"
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "E-commerce Returns Analysis",
+    img: "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?_gl=1*1xfgnmh*_ga*MTAwNzEzODg5MS4xNzUyNDAwOTMz*_ga_8JE65Q40S6*czE3NTM2MDEyNjMkbzQkZzEkdDE3NTM2MDEyNzAkajUzJGwwJGgw",
+    desc: "Examined product return and refund data to understand trends, reasons behind returns, and their impact on business performance. Leveraged data cleaning, visualization, and storytelling in Tableau to provide clear insights that can help optimize operations and improve customer satisfaction.",
+    projectLink: "https://github.com/IyerShruti/E-Commerce-Returns-Analysis.git"
   },
-  {
-    id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
+  
 ];
 
 const Single = ({ item }) => {
@@ -48,7 +47,14 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.projectLink} target="_blank" rel="noopener noreferrer">
+              <button>View Project</button>
+            </a>
+            {item.blogLink && (
+              <a href={item.blogLink} target="_blank" rel="noopener noreferrer">
+                <button>View Blog</button>
+              </a>
+            )}
           </motion.div>
         </div>
       </div>
@@ -72,7 +78,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>"My Dashboards"</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

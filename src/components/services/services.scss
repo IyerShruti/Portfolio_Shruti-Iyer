@@ -1,10 +1,12 @@
 @import "../../app.scss";
 .services {
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg, #362047, #290340);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 999;
+  overflow-x: clip;
 
   .textContainer {
     flex: 1;
@@ -41,20 +43,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
 
     @include mobile {
-      width: 100%;
+      width: 0%;
+      display:contents;
+      padding: -10;
+      margin-top: 50px;
+      margin-left: 200px;
+      z-index: 999;
     }
 
     .title {
       display: flex;
       align-items: center;
+      margin-left: 60px;
+      margin-right: 60px;
+      justify-content:center;
+      text-align: justify ;
       gap: 50px;
 
       @include mobile {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        flex-direction:row;
+        text-align: justify;
+        ;
+        margin-top: 30px;
+        z-index: 999;
       }
 
       img {
@@ -70,11 +85,38 @@
       }
 
       h1 {
-        font-size: 96px;
+        font-size: 70px;
         font-weight: 100;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 3vh;
+          margin-top: 20px;
+          z-index: 999;
+          
+        }
+      }
+      h2 {
+        font-size: 3vh;
+        font-weight: 10;
+        margin-top: 10px;
+        display:inline-block;
+        justify-content: space-evenly;
+        gap: 10px;
+        
+        
+
+        @include mobile {
+        font-size: 1.5vh;
+        margin-left: -50px;
+        margin-right: -50px;
+        display: flex;
+        justify-content: space-between;
+        align-items:normal;
+        gap: 10px;
+        padding:0 5px;
+        margin-top: 10px; // space before next section
+        min-height: auto;
+          
         }
       }
 
@@ -96,33 +138,101 @@
     }
   }
   .listContainer {
-    flex: 2;
+    flex: 1;
     display: flex;
+    justify-content: space-between;
     max-width: 1366px;
-    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    z-index: 999;
+    
 
     @include mobile {
-      flex-direction: column;
+      position: relative !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: clip;
+      overflow: visible; 
+      padding-top: 5px;
+      z-index: 10;
+      flex-direction: row;      // ✅ keep side by side even on mobile
+      gap: 5px;                 // reduce gap for small screens
       width: 100%;
+      
+      padding: 0 5px;   
+      
+      body {
+        overflow-x: clip;
+      }
+      
     }
 
     .box {
-      padding: 50px;
+      padding: 20px;
       border: 0.5px solid gray;
-      display: flex;
+      display:inline-block;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content:center;
+      margin-top: -190px;
+      gap: 20px;
+      align-items: stretch;
+      width: 90%;
+      height: 190%;
 
       @include mobile {
-        border: none;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
+        
+      transform: none !important;
+      transition: none !important;
+      position: relative !important;
+      z-index: 999;
       }
 
       p {
+        font-size: 2.5vh;
+        margin-top: 10px;
+        
         @include mobile {
-          display: none;
+          font-size: 1.45vh;
+          display: flex;
+          line-height: 1.5;
+          flex-direction: column;
+          justify-content: center;
+          
+          
+        }
+      }
+
+      h2 {
+
+        @include mobile {
+        font-size: 2vh;
+        margin-left: -5px;
+        margin-right: -50px;
+        display: flex;
+        justify-content: space-between;
+        align-items:normal;
+        gap: 10px;
+        padding:0 5px;
+        margin-top: 10px; // space before next section
+        min-height: auto;
+          
+        }
+      }
+      h4 {
+
+        @include mobile {
+        font-size: 1.6vh;
+        font-weight: 300;
+        margin-left: -5px;
+        margin-right: -50px;
+        display: flex;
+        justify-content: space-between;
+        align-items:normal;
+        gap: 5px;
+        padding:0 5px;
+        margin-top: 2px; // space before next section
+        min-height: auto;
+          
         }
       }
 

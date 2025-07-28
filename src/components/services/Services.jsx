@@ -16,7 +16,14 @@ const variants = {
       duration: 1,
       staggerChildren: 0.1,
     },
+    viewport:{ once: true, amount: 0.1 }
   },
+};
+const isMobile = window.innerWidth <= 768;
+
+const noAnimation = {
+  initial: { x: 0, y: 0, opacity: 1 },
+  animate: { x: 0, y: 0, opacity: 1 },
 };
 
 const Services = () => {
@@ -27,32 +34,24 @@ const Services = () => {
   return (
     <motion.div
       className="services"
-      variants={variants}
+      variants={isMobile ? noAnimation : variants}
       initial="initial"
       // animate="animate"
-      // whileInView="animate"
+      whileInView="animate"
       ref={ref}
-      animate={"animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow
-          <br /> and move forward
-        </p>
-        <hr />
-      </motion.div>
+     
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>About Me</motion.b> 
           </h1>
         </div>
         <div className="title">
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
-          </h1>
-          <button>WHAT WE DO?</button>
+          <h2>
+            <motion.b whileHover={{color:"orange"}}>I'm a data enthusiast with a computer science background and a passion for turning data into actionable insights. Starting with software development, I built strong problem-solving skills through academic and professional projects. After my Master’s, I shifted focus to data analytics, completing the Google Data Analytics Professional Certificate to enhance my skills in SQL, Tableau, Power BI, and data visualization. I enjoy uncovering patterns, asking meaningful questions, and presenting insights that drive decisions. My recent projects span streaming trends, human behavior, and digital well-being, and I’m eager to keep learning and helping organizations make data-driven choices.
+            </motion.b>
+          </h2>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,53 +59,19 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Bachelor's Degree</h2><h4>GPA: 9.05/10</h4> <h4>SIES GST (Mumbai)</h4><h4>July 2023</h4> 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I earned my Bachelor’s degree in Computer Engineering from SIES Graduate School of Technology, Mumbai, where I built a strong foundation in programming, algorithms, and software development. Through academic projects and coding competitions, I gained practical experience and strengthened my problem-solving skills. This journey fueled my curiosity for technology and prepared me for advanced studies in computing.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Master's Degree</h2><h4>GPA: 3.84/4</h4> <h4>University of Dayton (USA)</h4><h4>May 2025</h4> 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I completed my Master’s in Computer Science at the University of Dayton, USA, focusing on software development and immersive technologies like AR/VR. I worked on projects involving interactive applications and computer vision, which enhanced my ability to create innovative solutions. Over time, my work shifted toward data analytics, where I now combine my software background with analytical thinking to deliver impactful insights.
           </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>

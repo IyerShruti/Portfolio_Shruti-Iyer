@@ -3,89 +3,85 @@
 .contact {
   height: 100%;
   max-width: 1366px;
-  margin: auto;
+  margin-top: -20px;
+  margin-right: 30px;
+  margin-bottom: -30px;
+  margin-left: 60px;
   display: flex;
   align-items: center;
   gap: 50px;
 
   @include mobile {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     flex-direction: column;
   }
 
   .textContainer {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    font-size: 19px;
+   
 
     @include mobile {
       gap: 20px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
-    }
+      margin-top: 90px;
+      margin-right: 100px;
+      }
 
     h1 {
-      font-size: 100px;
+      font-size: 80px;
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 4vh;
       }
     }
 
     span {
       font-weight: 300;
+      width: 200%;
+      color: white ;
     }
   }
 
   .formContainer {
-    flex: 1;
+    flex: 1.5;
     position: relative;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 150px;
+    
     
     @include mobile {
-      padding: 50px;
-      width: 100%;
+    padding: 30px;
+    width: 135%;
+    
+    margin-left: 350px;
     }
 
 
     .phoneSvg {
-      stroke: orange;
+      stroke: rgb(203, 140, 239);
       position: absolute;
-      margin: auto;
       z-index: -1;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      input,
-      textarea {
-        padding: 20px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 5px;
-
-        @include mobile {
-          padding: 10px;
-        }
-      }
-
-      button {
-        padding: 20px;
-        border: none;
-        background-color: orange;
-        cursor: pointer;
-        font-weight: 500;
-        @include mobile {
-          padding: 10px;
-        }
+      object-fit: cover;
+      size: 90px;
+      
+      @include mobile{
+        display: block;
+        margin-left: -190px;         // Horizontally center
+        margin-top: -200px;
+        width: 100px;           // Adjust this to make image smaller
+        height: 100px;
+        padding: -10px;
+        
       }
     }
+    
   }
 }
