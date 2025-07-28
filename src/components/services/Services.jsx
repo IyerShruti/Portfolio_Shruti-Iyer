@@ -59,7 +59,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Bachelor's Degree</h2><h4>GPA: 9.05/10</h4> <h4>SIES GST (Mumbai)</h4><h4>July 2023</h4> 
+          <h2>Bachelor's Degree</h2><h4>GPA: 9.05/10</h4> <h4>SIES GST (Mumbai University)</h4><h4>July 2023</h4> 
           <p>
             I earned my Bachelor’s degree in Computer Engineering from SIES Graduate School of Technology, Mumbai, where I built a strong foundation in programming, algorithms, and software development. Through academic projects and coding competitions, I gained practical experience and strengthened my problem-solving skills. This journey fueled my curiosity for technology and prepared me for advanced studies in computing.
           </p>

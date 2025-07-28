@@ -107,6 +107,7 @@
 
         @include mobile {
         font-size: 1.5vh;
+        color: white;
         margin-left: -50px;
         margin-right: -50px;
         display: flex;
@@ -222,8 +223,9 @@
       h4 {
 
         @include mobile {
-        font-size: 1.6vh;
-        font-weight: 300;
+        font-size: 1.5vh;
+        color:white;
+        font-weight: 400;
         margin-left: -5px;
         margin-right: -50px;
         display: flex;
