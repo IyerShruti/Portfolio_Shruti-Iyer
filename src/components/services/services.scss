@@ -194,7 +194,7 @@
         
         @include mobile {
           font-size: 1.45vh;
-          color: white;
+          
           display: flex;
           line-height: 1.5;
           flex-direction: column;
@@ -208,7 +208,7 @@
 
         @include mobile {
         font-size: 2vh;
-        color: white;
+        
         margin-left: -5px;
         margin-right: -50px;
         display: flex;
@@ -225,7 +225,7 @@
 
         @include mobile {
         font-size: 1.5vh;
-        color:white;
+        
         font-weight: 400;
         margin-left: -5px;
         margin-right: -50px;
