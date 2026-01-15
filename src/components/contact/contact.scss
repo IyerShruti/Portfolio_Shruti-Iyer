@@ -1,0 +1,87 @@
+@import "../../app.scss";
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin-top: -20px;
+  margin-right: 30px;
+  margin-bottom: -30px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 19px;
+   
+
+    @include mobile {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 90px;
+      margin-right: 100px;
+      }
+
+    h1 {
+      font-size: 80px;
+      line-height: 88px;
+
+      @include mobile {
+        font-size: 4vh;
+      }
+    }
+
+    span {
+      font-weight: 300;
+      width: 200%;
+      color: white ;
+    }
+  }
+
+  .formContainer {
+    flex: 1.5;
+    position: relative;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 150px;
+    
+    
+    @include mobile {
+    padding: 30px;
+    width: 135%;
+    
+    margin-left: 350px;
+    }
+
+
+    .phoneSvg {
+      stroke: rgb(203, 140, 239);
+      position: absolute;
+      z-index: -1;
+      object-fit: cover;
+      size: 90px;
+      
+      @include mobile{
+        display: block;
+        margin-left: -190px;         // Horizontally center
+        margin-top: -200px;
+        width: 100px;           // Adjust this to make image smaller
+        height: 100px;
+        padding: -10px;
+        
+      }
+    }
+    
+  }
+}
