@@ -6,25 +6,25 @@ const items = [
 
   {
     id: 1,
-    title: "Fraud Detection using AI",
-    img: "https://images.pexels.com/photos/7111611/pexels-photo-7111611.jpeg",
-    desc: "Performed a granular analysis of transaction velocity and temporal trends to unearth financial anomalies within 6.6M+ records. Engineered custom risk-scoring metrics and developed an interactive Power BI dashboard to expose sophisticated 'burst' attacks and facilitate data-driven decision support.",
-    projectLink: "https://github.com/IyerShruti/Fraud-Detection-using-AI.git",
+    title: "GPAY Sentinel",
+    img: "https://images.pexels.com/photos/30885932/pexels-photo-30885932.jpeg",
+    desc: "Developed as a submission for the Gemini 3.0 Hackathon, GPay Sentinel analyzes human behavior and hesitation patterns within 6.6M+ records to identify biometric risk factors. Engineered custom scoring metrics and an interactive dashboard to expose sophisticated 'burst' attacks, leveraging real-time behavioral biometrics to enhance transaction security and facilitate data-driven fraud prevention.",
+    projectLink: "https://github.com/IyerShruti/GPay_Sentinel.git"
   },
   {
     id: 2,
+    title: "Fraud Detection using AI",
+    img: "https://images.pexels.com/photos/7111611/pexels-photo-7111611.jpeg",
+    desc: "Performed a granular analysis of transaction velocity and temporal trends to unearth financial anomalies within 6.6M+ records. Engineered custom risk-scoring metrics and developed an interactive Power BI dashboard to expose sophisticated 'burst' attacks and facilitate data-driven decision support.",
+    projectLink: "https://github.com/IyerShruti/Fraud-Detection-using-AI.git"
+  },
+  {
+    id: 3,
     title: "Digital Well-being Analysis (Capstone)",
     img: "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?_gl=1*fe90u6*_ga*MTAwNzEzODg5MS4xNzUyNDAwOTMz*_ga_8JE65Q40S6*czE3NTM2MDEyNjMkbzQkZzEkdDE3NTM2MDMwMTMkajQzJGwwJGgw",
     desc: "Conducted an in-depth analysis of how screen time, sleep hours, Zoom meetings, and exercise influence burnout, mood, and work-life balance. Designed unique metrics and built an interactive Tableau dashboard to uncover meaningful patterns and actionable insights.",
     projectLink: "https://github.com/IyerShruti/Digital-Wellbeing-Analysis.git",
     blogLink: "https://medium.com/@iyershrutisuresh/from-doomscrolling-to-dashboarding-my-first-data-dive-into-burnout-93a9add36d0d"
-  },
-  {
-    id: 3,
-    title: "E-commerce Returns Analysis",
-    img: "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?_gl=1*1xfgnmh*_ga*MTAwNzEzODg5MS4xNzUyNDAwOTMz*_ga_8JE65Q40S6*czE3NTM2MDEyNjMkbzQkZzEkdDE3NTM2MDEyNzAkajUzJGwwJGgw",
-    desc: "Examined product return and refund data to understand trends, reasons behind returns, and their impact on business performance. Leveraged data cleaning, visualization, and storytelling in Tableau to provide clear insights that can help optimize operations and improve customer satisfaction.",
-    projectLink: "https://github.com/IyerShruti/E-Commerce-Returns-Analysis.git"
   },
   
 ];

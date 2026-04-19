@@ -16,7 +16,7 @@ const Navbar = () => {
           
         </motion.span>
         <div className="social">
-          <a href="https://drive.google.com/file/d/19ROhWDk5qyhZp1Cj36tZOGII5xYfpM7K/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>
+          <a href="https://drive.google.com/file/d/1oqbAX1-G0GSIDOaKjMs8ZIgnh16lEkC-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" download>
             <button>Download Resume</button>
           </a>
           <a href="https://www.credly.com/badges/c6231420-2f86-47bd-9f3a-1aa2b12830dc/public_url" target="_blank" rel="noopener noreferrer" >

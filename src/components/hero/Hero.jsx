@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>SHRUTI IYER</motion.h2>
           <motion.h1 variants={textVariants}>
-            SELECT Insight FROM Data;
+            Data Scientist
           </motion.h1>
           
          
@@ -61,7 +61,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        DATA DATA DATA
+        DATA SCIENCE
       </motion.div>
       <div className="imageContainer">
         <img src="/hero.png" alt="" />

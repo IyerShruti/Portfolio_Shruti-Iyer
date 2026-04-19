@@ -49,7 +49,7 @@ const Services = () => {
         </div>
         <div className="title">
           <h2>
-            <motion.b whileHover={{color:"orange"}}>I'm a data enthusiast with a computer science background and a passion for turning data into actionable insights. Starting with software development, I built strong problem-solving skills through academic and professional projects. After my Master’s, I shifted focus to data analytics, completing the Google Data Analytics Professional Certificate to enhance my skills in SQL, Tableau, Power BI, and data visualization. I enjoy uncovering patterns, asking meaningful questions, and presenting insights that drive decisions. My recent projects span streaming trends, human behavior, and digital well-being, and I’m eager to keep learning and helping organizations make data-driven choices.
+            <motion.b whileHover={{color:"orange"}}>I am a Data Scientist at Tibil Solutions with a Master’s in Computer Science from the University of Dayton and a passion for turning complex data into actionable insights. Following specialized Data Science coursework and a certification in Autonomous Systems and Data Science from University of Dayton, I now focus on the intersection of AI, human behavior, and platform safety. I am currently working on fraud detection Proof of Concepts (POCs), leveraging behavioral biometrics to identify patterns like digital hesitation within financial ecosystems. With expertise in SQL, Tableau, and Machine Learning, I am dedicated to using data storytelling to uncover the "why" behind information and help organizations build smarter, more secure technological environments.
             </motion.b>
           </h2>
         </div>
@@ -70,7 +70,7 @@ const Services = () => {
         >
           <h2>Master's Degree</h2><h4>GPA: 3.84/4</h4> <h4>University of Dayton (USA)</h4><h4>May 2025</h4> 
           <p>
-            I completed my Master’s in Computer Science at the University of Dayton, USA, focusing on software development and immersive technologies like AR/VR. I worked on projects involving interactive applications and computer vision, which enhanced my ability to create innovative solutions. Over time, my work shifted toward data analytics, where I now combine my software background with analytical thinking to deliver impactful insights.
+            I completed my Master’s in Computer Science at the University of Dayton, specializing through advanced coursework and a certification in Autonomous Systems and Data Science. My academic work focused on high-level data modeling and computer vision, sharpening my ability to extract meaningful patterns from complex datasets. By combining this rigorous training with behavioral analytics, I deliver impactful, security-focused insights for modern technological environments.
           </p>
         </motion.div>
       </motion.div>
